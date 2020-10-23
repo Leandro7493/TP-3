@@ -6,15 +6,14 @@ namespace Ejercicio_3
 {
     class EstrategiaFIFO : iEstrategiaAsignacion
     {
-        public void OrdenarPaciente(Paciente pPaciente, Paciente[] pPacientes)
+        public void OrdenarPaciente(Paciente pPaciente, List<Paciente> pPacientes)
         {
-            for (int i = 0; i < pPacientes.Length; i++)
-            {
-                if (pPacientes[i] == null)
-                {
-                    pPacientes[i] = pPaciente;
-                }
-            }
+            pPacientes.Add(pPaciente);
+        }
+
+        public void EliminarPaciente(List<Paciente> pPacientes)
+        {
+            pPacientes.RemoveAt(0);
         }
     }
 }

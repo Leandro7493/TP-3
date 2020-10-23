@@ -6,13 +6,12 @@ namespace Ejercicio_3
 {
     public abstract class Sala
     {
-        private Paciente[] iPacientes;
+        public List<Paciente> iPacientes;
 
         public Sala()
         {
-            iPacientes = new Paciente[10];
+            iPacientes = new List<Paciente>();
         }
-
         public abstract void RecibirPaciente(Paciente pPaciente);
     }
 }

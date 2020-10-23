@@ -6,9 +6,10 @@ namespace Ejercicio_3
 {
     class SalaUrgencia : Sala
     {
+        private EstrategiaTriaje Estrategia { get; set; }
         public override void RecibirPaciente(Paciente pPaciente)
         {
-            throw new NotImplementedException();
+            Estrategia.OrdenarPaciente(pPaciente, iPacientes);
         }
     }
 }
