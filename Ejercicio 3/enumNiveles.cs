@@ -7,9 +7,9 @@ namespace Ejercicio_3
     public enum enumNiveles
     {
        AtencionInmediata = 1,
-       Emergencia,
-       Urgente,
-       MenosUrgente,
-       NoUrgente
+       Emergencia = 2,
+       Urgente = 3,
+       MenosUrgente = 4,
+       NoUrgente = 5
     }
 }

@@ -13,5 +13,12 @@ namespace Ejercicio_3
             iPacientes = new List<Paciente>();
         }
         public abstract void RecibirPaciente(Paciente pPaciente);
+
+        public virtual Paciente EliminarPaciente(List<Paciente> pPacientes)
+        {
+            Paciente iTempPaciente = pPacientes[0];
+            pPacientes.RemoveAt(0);
+            return iTempPaciente;
+        }
     }
 }

@@ -6,6 +6,6 @@ namespace Ejercicio_3
 {
     public interface iEstrategiaAsignacion
     {
-        public abstract void OrdenarPaciente(Paciente pPaciente, List<Paciente> pPacientes);
+        public abstract List<Paciente> OrdenarPaciente(Paciente pPaciente, List<Paciente> pPacientes);
     }
 }
